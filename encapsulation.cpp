@@ -41,6 +41,18 @@ double getSalary(){
     return salary;
 }
 
-
+void displayEmployeeInfo(){
+    cout << "Employee ID: " << id << "\nName: " << name << "\nEmploye Salary: " << salary << " $" <<endl;
+}
 };
 
+int main(){
+
+    cout << "\n\n--- Employee Encapsulation Consept --- \n\n";
+
+    Employee emp("Ibrahim John", 23456789, 2345.65);
+    emp.displayEmployeeInfo();
+
+    cout << "------------------------------------- \n";
+    return 0;
+}
