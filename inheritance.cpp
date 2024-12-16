@@ -22,3 +22,16 @@ public:
 
 
 //inherited class That inherit from parent class
+
+class Manager:public Employee{
+    private:
+        string promotion;
+
+    public:
+    Manager(string name, int pf, int id, double salary, string position):Employee(name, pf, id, salary), promotion(position){} 
+
+    void displayManagerInfo(){
+        displayInfo();
+        cout << "\nPosition: " << promotion << endl;
+    }
+}
