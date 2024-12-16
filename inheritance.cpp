@@ -32,7 +32,7 @@ class Manager:public Employee{
 
     void displayManagerInfo(){
         displayInfo();
-        cout << "\nPosition: " << promotion << endl;
+        cout << "Position: " << promotion << endl;
     }
 };
 
@@ -47,7 +47,7 @@ class Developer : public Employee{
     
     void displayDeveloperInfo(){
         displayInfo();
-        cout << "\nLanguage: " << programmingLanguage << endl;
+        cout << "Language: " << programmingLanguage << endl;
     }
 };
 
@@ -55,7 +55,7 @@ class Developer : public Employee{
 int main(){
     Manager mng("Ibrahim Mseti", 347, 987654321, 467000.97, "manager");
     Developer dev("Ibrahim Mseti", 347, 987654321, 467000.97, "C++, Js,React, C, Kotlin");
-
+    cout << "\n\n--- EMPLOYEE MANAGMENT WITH OOP --- \n\n";
     mng.displayManagerInfo();
     cout << "\n----------------------------------------------" << endl;
     dev.displayDeveloperInfo();
