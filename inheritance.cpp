@@ -34,4 +34,19 @@ class Manager:public Employee{
         displayInfo();
         cout << "\nPosition: " << promotion << endl;
     }
-}
+};
+
+//drived class for developer
+
+class Developer : public Employee{
+
+    private:
+        string programmingLanguage;
+    public:
+    Developer(string name, int empPF, int empID, double salary,string planguage):Employee(name, empPF, empID, salary),programmingLanguage(planguage){}
+    
+    void displayDeveloperInfo(){
+        displayInfo();
+        cout << "\nLanguage: " << programmingLanguage << endl;
+    }
+};
