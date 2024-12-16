@@ -1,4 +1,4 @@
-#include <iostream>>
+#include <iostream>
 #include<string>
 
 using namespace std;
@@ -50,3 +50,15 @@ class Developer : public Employee{
         cout << "\nLanguage: " << programmingLanguage << endl;
     }
 };
+
+
+int main(){
+    Manager mng("Ibrahim Mseti", 347, 987654321, 467000.97, "manager");
+    Developer dev("Ibrahim Mseti", 347, 987654321, 467000.97, "C++, Js,React, C, Kotlin");
+
+    mng.displayManagerInfo();
+    cout << "\n----------------------------------------------" << endl;
+    dev.displayDeveloperInfo();
+    cout << "\n----------------------------------------------" << endl;
+    return 0;
+}
