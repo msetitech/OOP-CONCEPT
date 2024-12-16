@@ -54,5 +54,11 @@ int main(){
     emp.displayEmployeeInfo();
 
     cout << "------------------------------------- \n";
+
+
+    // Access and update Single info within Class using  Setter function
+    emp.setSalary(800000);
+
+    cout << "\nUpdated Salary: " << emp.getSalary()<< "$ "<< endl;
     return 0;
 }
