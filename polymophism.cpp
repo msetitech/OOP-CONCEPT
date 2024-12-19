@@ -10,7 +10,7 @@ class Employee{
     Employee(string empName, int empID):name(empName),id(empID){}
 
     void displayInformation(){
-        cout << "--- Employee System ---";
+        cout << "--- Employee System ---\n";
         cout << "Employee Name: " << name << "\nEmployee ID: " << id << endl;
     }
 };
@@ -23,7 +23,7 @@ class Manager : public Employee {
     
         void displayInformation()  {
                 cout << "Manager Information\n";
-                Employee::displayInformation() override;
+                Employee::displayInformation();
                 cout << "Bonus: " << bonus << endl;
             }
 };
